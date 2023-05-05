@@ -22,6 +22,11 @@ function Form() {
 				<input type='password' placeholder="Enter password" name="password" id="password"></input>
 			</div>
 
+			<div>
+				<button type='submit'>Submit</button>
+				<button type='reset'>Reset</button>
+			</div>
+
 			
 		</form>
 
