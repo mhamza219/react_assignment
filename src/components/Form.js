@@ -1,6 +1,9 @@
 import React from 'react'
 
+
+
 function Form() {
+	
 	return (
 		<form className = 'container'>
 			<div className = 'header'>
@@ -23,7 +26,7 @@ function Form() {
 			</div>
 
 			<div>
-				<button type='submit'>Submit</button>
+				<button type='submit'>Submit</button>&nbsp;
 				<button type='reset'>Reset</button>
 			</div>
 
