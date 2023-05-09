@@ -10,7 +10,7 @@ const Count = () => {
 	}
 
 	// Decrement
-	const dncNum = () => {
+	const decNum = () => {
 		setNum(num-1);
 	}
 	return(
@@ -20,7 +20,7 @@ const Count = () => {
 					<h1> {num} </h1>
 					<div className="btn_div">
 						<button onClick={incNum}> Increment </button>
-						<button onClick={dncNum}> Decrement </button>
+						<button onClick={decNum}> Decrement </button>
 					</div>
 				</div>
 			</div>
