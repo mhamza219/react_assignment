@@ -1,13 +1,12 @@
 
 import './App.css';
-import Form from './components/Form'
-import Count from './components/Count'
+
+import List from './settings/List'
 
 function App() {
   return (
     <div className="App">
-    <Form/>
-    <Count/>
+    <List/>
       
     </div>
   );
