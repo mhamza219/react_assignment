@@ -5,8 +5,10 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 
+
 import Form from '../components/Form'
 import Count from '../components/Count'
+import Date from '../components/Date'
 
 
 interface TabPanelProps {
@@ -55,7 +57,7 @@ export default function List() {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Form" {...a11yProps(0)} />
           <Tab label="Count" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Date" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -65,7 +67,7 @@ export default function List() {
         <Count/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Date/>
       </TabPanel>
     </Box>
   );
