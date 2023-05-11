@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import Form from '../components/Form'
 import Count from '../components/Count'
 import Date from '../components/Date'
+import Gallery from '../components/Gallery'
 
 
 interface TabPanelProps {
@@ -58,6 +59,8 @@ export default function List() {
           <Tab label="Form" {...a11yProps(0)} />
           <Tab label="Count" {...a11yProps(1)} />
           <Tab label="Date" {...a11yProps(2)} />
+          <Tab label="Gallery" {...a11yProps(3)} />
+
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -68,6 +71,9 @@ export default function List() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Date/>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <Gallery/>
       </TabPanel>
     </Box>
   );
