@@ -10,6 +10,9 @@ import Form from '../components/Form'
 import Count from '../components/Count'
 import Date from '../components/Date'
 import Gallery from '../components/Gallery'
+import Todo from '../components/Todo'
+import Calculator from '../components/Calculator'
+
 
 
 interface TabPanelProps {
@@ -60,6 +63,8 @@ export default function List() {
           <Tab label="Count" {...a11yProps(1)} />
           <Tab label="Date" {...a11yProps(2)} />
           <Tab label="Gallery" {...a11yProps(3)} />
+          <Tab label="Todo" {...a11yProps(4)} />
+          <Tab label="Calculator" {...a11yProps(5)} />
 
         </Tabs>
       </Box>
@@ -74,6 +79,12 @@ export default function List() {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Gallery/>
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <Todo/>
+      </TabPanel>
+      <TabPanel value={value} index={5}>
+        <Calculator/>
       </TabPanel>
     </Box>
   );
