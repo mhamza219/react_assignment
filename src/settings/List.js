@@ -13,6 +13,8 @@ import Gallery from '../components/Gallery'
 import Todo from '../components/Todo'
 import Calculator from '../components/Calculator'
 import WeatherApp from '../components/WeatherApp'
+import Item from '../components/Item'
+
 
 
 
@@ -67,6 +69,7 @@ export default function List() {
           <Tab label="Todo" {...a11yProps(4)} />
           <Tab label="Calculator" {...a11yProps(5)} />
           <Tab label="WeatherApp" {...a11yProps(6)} />
+          <Tab label="Item" {...a11yProps(7)} />
 
         </Tabs>
       </Box>
@@ -90,6 +93,9 @@ export default function List() {
       </TabPanel>
       <TabPanel value={value} index={6}>
         <WeatherApp/>
+      </TabPanel>
+      <TabPanel value={value} index={7}>
+        <Item/>
       </TabPanel>
     </Box>
   );

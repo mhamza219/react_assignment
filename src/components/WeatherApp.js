@@ -51,6 +51,7 @@ export default WeatherApp;
 
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css"
+import '../css/Weather.css'
 import { useEffect, useState } from "react";
 
 
