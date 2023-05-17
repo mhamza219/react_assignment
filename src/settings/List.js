@@ -15,6 +15,7 @@ import Calculator from '../components/Calculator'
 import WeatherApp from '../components/WeatherApp'
 import Item from '../components/Item'
 import Filter from '../components/Filter'
+import ApiData from '../components/ApiData'
 
 
 
@@ -72,6 +73,7 @@ export default function List() {
           <Tab label="WeatherApp" {...a11yProps(6)} />
           <Tab label="Item" {...a11yProps(7)} />
           <Tab label="Filter" {...a11yProps(8)} />
+          <Tab label="ApiData" {...a11yProps(9)} />
 
         </Tabs>
       </Box>
@@ -101,6 +103,9 @@ export default function List() {
       </TabPanel>
       <TabPanel value={value} index={8}>
         <Filter/>
+      </TabPanel>
+      <TabPanel value={value} index={9}>
+        <ApiData/>
       </TabPanel>
     </Box>
   );
