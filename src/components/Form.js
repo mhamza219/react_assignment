@@ -1,3 +1,4 @@
+/*
 import React, {useState} from 'react'
 
 
@@ -51,3 +52,70 @@ function Form() {
 }
 
 export default Form
+*/
+
+
+
+import React, { useState } from "react";
+
+function Form() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Validate form values
+    if (name === "" || email === "" || message === "") {
+      console.log("Please fill in all fields.");
+      return;
+    }
+
+    // Log form data to the console
+    console.log("Name: " + name);
+    console.log("Email: " + email);
+    console.log("Message: " + message);
+
+    // You can perform further actions (e.g., send the data to a server) here
+
+    // Reset form fields
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        required
+      />
+
+      <label htmlFor="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+
+      <label htmlFor="message">Message:</label>
+      <textarea
+        id="message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        required
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+
+export default Form;
