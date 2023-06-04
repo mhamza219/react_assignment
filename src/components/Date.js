@@ -14,7 +14,7 @@ const CurrentDateTime = () => {
   return (
     <div>
       <h2>Current Date and Time:</h2>
-      <p>{currentDateTime.toLocaleString()}</p>
+      <div>{currentDateTime.toString()}</div>
     </div>
   );
 };
